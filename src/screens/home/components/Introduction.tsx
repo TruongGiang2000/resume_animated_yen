@@ -1,5 +1,5 @@
 import {Col, Image, Row} from 'antd';
-import {self_face} from '../../../assets';
+import {self_photo} from '../../../assets';
 import {Spacer, Typo} from '../../../components';
 import colors from '../../../constants/colors';
 import styles from '../styles';
@@ -28,6 +28,7 @@ const Introduction = () => {
         "animations",
         "maintainable",
         "solutions",
+        "innovative"
     ]
     const highLightTxtContact = [
         "create",
@@ -40,7 +41,7 @@ const Introduction = () => {
         "of",
         "expertise",
     ]
-    return <Row align="top" justify='space-between'>
+    return <Row align="middle" justify='space-between'>
         <Col span={14} style={styles.boxInformation}>
             <TypeAnimation
                 sequence={[
@@ -76,8 +77,8 @@ const Introduction = () => {
         </Col>
         <Col span={9}>
             <Image
-                src={self_face}
-                style={{borderRadius: 12}}
+                src={self_photo}
+                style={{borderRadius: 12, border: '4px solid rgb(255, 244, 228)'}}
                 preview={false}
             />
         </Col>

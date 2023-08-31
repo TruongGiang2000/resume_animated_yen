@@ -13,7 +13,7 @@ const DEFINE_SCROLL_Y = {
 }
 const DEFINE_SCROLL_TO = {
     home: 0,
-    skill: 550,
+    skill: 500,
     experience: 1270,
     other: 3350,
     education: 3630,

@@ -107,5 +107,10 @@ const styles = {
 	paddingNone: {
 		padding: 0,
 	} as React.CSSProperties,
+	boxImg: {
+		backgroundImage:
+			"linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )",
+		borderRadius: 12,
+	} as React.CSSProperties,
 } as const
 export default styles
