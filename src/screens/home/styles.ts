@@ -50,8 +50,8 @@ const styles = {
 		margin: 0,
 	} as React.CSSProperties,
 	logo: {
-		width: 60,
-		height: 60,
+		width: 80,
+		height: 80,
 	} as React.CSSProperties,
 	txtTitle: {
 		display: "block",
