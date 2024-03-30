@@ -1,1 +1,1 @@
-export const onLink = (link: string) => window.open(link)
+export const onLink = (link: string) => window.open(link);
