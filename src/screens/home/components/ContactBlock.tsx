@@ -13,12 +13,12 @@ interface ColorIconProps {
 const ContactBlock = () => {
     const initColor = {icon: colors.black, bg: colors.white}
     const [colorLinked, setColorLinked] = useState<ColorIconProps>(initColor)
-    const [colorGitHub, setColorGitHub] = useState<ColorIconProps>(initColor)
+    // const [colorGitHub, setColorGitHub] = useState<ColorIconProps>(initColor)
     const [colorFacebook, setColorFacebook] = useState<ColorIconProps>(initColor)
 
-    const onMouseOverGitHub = () => {
-        setColorGitHub({icon: colors.white, bg: colors.black})
-    }
+    // const onMouseOverGitHub = () => {
+    //     setColorGitHub({icon: colors.white, bg: colors.black})
+    // }
     const onMouseOverLinked = () => {
         setColorLinked({icon: colors.white, bg: colors.linked})
     }
@@ -27,12 +27,12 @@ const ContactBlock = () => {
     }
     const onMouseLeave = () => {
         setColorLinked(initColor)
-        setColorGitHub(initColor)
+        // setColorGitHub(initColor)
         setColorFacebook(initColor)
     }
 
     const renderIconLinked = <LinkedinFilled style={{...styles.icon, color: colorLinked.icon}} />
-    const renderIconGitHub = <GithubFilled style={{...styles.icon, color: colorGitHub.icon}} />
+    // const renderIconGitHub = <GithubFilled style={{...styles.icon, color: colorGitHub.icon}} />
     const renderIconFacebook = <FacebookFilled style={{...styles.icon, color: colorFacebook.icon}} />
     return <Row align={'middle'}>
         <Button onClick={() => onLink(LINK_IN_WEB.mailTo)} style={styles.btn}>Contact me</Button>
@@ -45,13 +45,13 @@ const ContactBlock = () => {
             onMouseLeave={onMouseLeave}
         />
         <Spacer w={10} />
-        <Button
+        {/* <Button
             onMouseOver={onMouseOverGitHub}
             onMouseLeave={onMouseLeave}
             onClick={() => onLink(LINK_IN_WEB.github)}
             style={{...styles.btnNone, backgroundColor: colorGitHub.bg}}
             icon={renderIconGitHub}
-        />
+        /> */}
         <Spacer w={10} />
         <Button
             onMouseOver={onMouseOverFacebook}

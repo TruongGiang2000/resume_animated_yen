@@ -2,7 +2,7 @@ import {Col, Divider, Row} from "antd";
 import Lottie from 'lottie-react';
 import {Spacer, Typo} from "../../../components";
 import styles from '../styles';
-import {DATA_ROW_FIRST, DATA_ROW_SECOND} from './constants';
+import {DATA_ROW_FIRST} from './constants';
 const MySkills = () => {
     return <>
         <Divider style={styles.driver} orientation="center"><Typo style={styles.txtTitle} fontSize={32} txt='MY SKILLS' bold /></Divider>
@@ -23,7 +23,7 @@ const MySkills = () => {
         </Row>
         <Spacer h={16} />
         <Row align="middle" justify="center">
-            {DATA_ROW_SECOND?.map((it, index) => {
+            {/* {DATA_ROW_SECOND?.map((it, index) => {
                 return <Col key={`${index}`} span={6} style={styles.pRightBlock}>
                     <Col style={styles.colInfo}>
                         <Lottie style={styles.lottie} animationData={it?.lottie} loop={true} />
@@ -35,7 +35,7 @@ const MySkills = () => {
                         </>)}
                     </Col>
                 </Col>
-            })}
+            })} */}
         </Row>
     </>
 }

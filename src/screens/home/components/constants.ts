@@ -7,43 +7,48 @@ import language from "../../../assets/lottie/language.json"
 import softSkills from "../../../assets/lottie/softSkills.json"
 export const DATA_ROW_FIRST = [
 	{
-		title: "Development Tools",
-		lottie: toolData,
+		title: "Knowledge",
+		lottie: knowledge,
 		content: [
-			"• Postman - Flipper - Swagger.",
-			"• Jira - Slack - Clickup.",
-			"• Figma - Zeplin - Sketch.",
-			"• Android Studio - Xcode.",
+			"• Agile Methodology.",
+			"• Functional Testing.",
+			"• Non-functional Testing.",
+			"• Query Database.",
+			"• System Structure.",
 		],
 	},
 	{
-		title: "Integration Services",
+		title: "Technical",
 		lottie: serviceData,
 		content: [
-			"• Appcenter - Firebase - FB.",
-			"• Payoo - Momo - VnPay.",
-			"• Openvidu - Twilio.",
-			"• One Signal - VoIP.",
+			"• Requirement Analysis.",
+			"• Design Test Plan, Test Case.",
+			"• Test Implementation and Execution.",
+			"• Acceptance Testing.",
+			"• Performance Testing.",
 		],
 	},
 	{
-		title: "Data Management Stack",
-		lottie: dataManagement,
+		title: "Testing Tools",
+		lottie: toolData,
 		content: [
-			"• Fetchblob - Axios - Graph.",
-			"• Redux Thunk - Saga.",
-			"• Redux Observable - Rxjs.",
-			"• Redux Persist - Sqlite.",
+			"• Jira - AIO.",
+			"• Postman - Swagger.",
+			"• Figma - Whimsical.",
+			"• Microsoft SSMS - Robo3T.",
+			"• JMeter.",
+			"",
 		],
 	},
 	{
-		title: "React Techniques",
-		lottie: reactData,
+		title: "Soft Skills",
+		lottie: softSkills,
 		content: [
-			"• ES6 - ES7.",
-			"• React Hook - React Class.",
-			"• TypeScript - JavaScript.",
-			"• Component LifeCycle.",
+			"• Task Management.",
+			"• Teamwork and Independence.",
+			"• Problem Solving.",
+			"• Quick Learning.",
+			"• Stress Management.",
 		],
 	},
 ]
@@ -53,20 +58,21 @@ export const DATA_ROW_SECOND = [
 		title: "Knowledge",
 		lottie: knowledge,
 		content: [
-			"• SocketIO - Mqtt - Event Push.",
-			"• Native Module.",
-			"• Design Pattern - Navigation.",
-			"• Eslint - Prettier.",
+			"• Agile Methodology.",
+			"• Requirement Analysis.",
+			"• Test Plan, Test Implementation and Execution, Reporting.",
+			"• Black Box, Gray Box Testing, functional and non-functional.",
 		],
 	},
 	{
 		title: "Soft Skills",
 		lottie: softSkills,
 		content: [
-			"• Problem Solving - Teamwork.",
-			"• Work Individual - Creativity.",
-			"• Stress Management.",
-			"• Time Management.",
+			"• Multitasking and organizational.",
+			"• Good teamwork and independence.",
+			"• Good ability of adaptability.",
+			"• Ability to study new technology quickly.",
+			"• Ability to work under pressure.",
 		],
 	},
 	{
@@ -81,70 +87,66 @@ export const DATA_ROW_SECOND = [
 	},
 ]
 
-export const RESPONSIBILITY_NAMI = [
-	"• Ekyc with Veriff.",
-	"• Analytics and appcrashe with Sentry.",
-	"• Performance optimization.",
-	"• Dark/light mode.",
-	"• Multiple languages.",
-	"• Develop and fix the application’s detect base on requirements.",
+export const RESPONSIBILITY_REDEX = [
+	"• Read and analyse requirements.",
+	"• Create Test Plan, Test Cases.",
+	"• Execute test and tracking bugs on Jira.",
+	"• Integration testing with other projects and third-party.",
+	"• Using Postman for API Testing.",
+	"• Using SSMS for Data Checking.",
+	"• Using JMeter for Performance Testing.",
+	"• Coordinate closely with BA and PO to enhance the system.",
+	"• Maintain the Automation sources.",
+	"• Support Operation team in resolving problems.",
+	"• Summarize the report from QC team in all projects to the CTO weekly.",
 ]
 export const RESPONSIBILITY_YOUMED = [
-	"• Develop and fix the application’s detect base on requirements.",
-	"• Design pattern for application.",
-	"• Application deployment and app store management.",
-	"• Integrate payment method (payoo, zalopay, momo).",
-	"• Intergrate video streaming call (twilio) and chat.",
-	"• Deep link integration.",
-	"• Firebase service integration.",
+	"• Read and analyse requirements.",
+	"• UI and functional testing on Moblile Apps and Web Portal.",
+	"• Create Checklist, Test cases, Execute test, Report bug on Jira and report for IT Director.",
+	"• Using Postman to test API.",
+	"• Using Robo3T to check data in MongoDB.",
+	"• Support Sale team and Customer Service team in resolving problem.",
 ]
-export const RESPONSIBILITY_VETJET = [
-	"• Authentication for app.",
-	"• Service booking.",
-	"• Fight tracking.",
-	"• Dynamic UI rendering from CMS.",
+export const RESPONSIBILITY_TDA = [
+	"• Receiving requests from Clients.",
+	"• Analyst business and requirement.",
+	"• Testing: create checklist, execute test, report bugs on Redmine.",
+	"• Component testing, integration testing and user acceptance testing.",
+	"• Writing software manuals.",
+	"• Planning to implement software user guide for Clients.",
+	"• Support Developer team on Database structure.",
+	"• Support Clients in real operations on the system.",
+	"• Handling small arising bugs.",
+	"• Resolve Clients complaints.",
+	"• Monitoring the progress of project.",
+	"• Training domain knowledge for Customer Service team.",
 ]
-export const RESPONSIBILITY_HD_BANK = [
-	"• Face recognition-based login implementation.",
-	"• Dynamic UI rendering from CMS.",
-	"• Real time weather with Mqtt.",
-	"• HTML module.",
-	"• Native module parsing to Javascript.",
-	"• Voice search implementation proficiency.",
-	"• Robot control coding proficiency.",
-]
-export const RESPONSIBILITY_POD_HEALTH = [
-	"• Video Streaming (openvidu).",
-	"• Sync settings from CMS.",
-	"• Serial port control for machine automation.",
-]
-export const DESCRIPTION_NAMI =
-	"Nami Exchange is a pivotal digital asset platform within the Nami cryptocurrency ecosystem. Built on blockchain technology, it guarantees privacy, security, fast transactions, and decentralization for seamless asset exchange."
+export const DESCRIPTION_REDEX =
+	"The system provides Device and REC registration integrated with an internationally recognized REC registry, users can buy and sell RECs with advanced features such as buy, sell, limit orders, etc."
+export const DESCRIPTION_RECONNECT =
+	"The application enables income generation from grid-connected rooftop solar, encouraging people to install and use solar panels and reduce carbon emissions."
 export const DESCRIPTION_YOUMED =
 	"YouMed is an all-encompassing healthcare app connecting users with medical services, hospitals, and healthcare professionals. It offers convenient access to appointments, consultations, prescriptions, and online medical advice."
-export const DESCRIPTION_VIETJET =
-	"Vietjet Air's app is a user-friendly platform enhancing air travel. With a focus on convenience, it streamlines booking, baggage management, and in-flight services for a seamless experience."
-export const DESCRIPTION_HD_BANK =
-	"The HD Bank app revolutionizes financial management with innovation. It offers comprehensive banking, real-time gold price tracking, and interactive queries through a cutting-edge robotic interface."
-export const DESCRIPTION_POD_HEALTH =
-	"POD Health is a cutting-edge app integrated into health monitoring devices, enabling users to independently self-diagnose their health. Designed for convenience and effectiveness, it offers a fresh approach to managing personal health."
+export const DESCRIPTION_TDA =
+	"This is a large system running on Windows used to manage hotel business activities, integrating many functional modules to serve all departments in the hotel (Reception, Sales, Accounting, Human Resources, etc). The system has been provided to more than 300 hotels nationwide."
 export const LINK_IN_WEB = {
-	mailTo: "mailto:truonggiang20001807@gmail.com",
-	linked: "https://www.linkedin.com/in/827895219",
-	github: "https://github.com/TruongGiang2000",
-	fb: "https://www.facebook.com/rock.the.12914216",
-	webNami: "https://nami.exchange",
-	androidNami:
-		"https://play.google.com/store/apps/details?id=com.namicorp.exchange",
-	iosNami:
-		"https://apps.apple.com/vn/app/nami-exchange-buy-btc-crypto/id1480302334",
-	webYouMed: "https://youmed.vn",
-	androidYouMed:
-		"https://play.google.com/store/apps/details?id=com.youmed.info",
-	iosYouMed:
-		"https://apps.apple.com/vn/app/youmed-%E1%BB%A9ng-d%E1%BB%A5ng-%C4%91%E1%BA%B7t-kh%C3%A1m/id1466077723",
-	webVietjet: "https://www.vietjetair.com",
-	androidVejet:
-		"https://play.google.com/store/apps/details?id=com.vietjetair.vjmobileapp",
-	iosVietjet: "https://apps.apple.com/vn/app/vietjet-air/id867009161",
+	mailTo: "mailto:lehoangyennt24@gmail.com",
+	linked: "https://www.linkedin.com/in/hoang-yen-le-45984a1b9/",
+	//github: "https://github.com/hy2412",
+	fb: "https://www.facebook.com/lhyen92/",
+// 	webNami: "https://nami.exchange",
+// 	androidNami:
+// 		"https://play.google.com/store/apps/details?id=com.namicorp.exchange",
+// 	iosNami:
+// 		"https://apps.apple.com/vn/app/nami-exchange-buy-btc-crypto/id1480302334",
+// 	webYouMed: "https://youmed.vn",
+// 	androidYouMed:
+// 		"https://play.google.com/store/apps/details?id=com.youmed.info",
+// 	iosYouMed:
+// 		"https://apps.apple.com/vn/app/youmed-%E1%BB%A9ng-d%E1%BB%A5ng-%C4%91%E1%BA%B7t-kh%C3%A1m/id1466077723",
+// 	webVietjet: "https://www.vietjetair.com",
+// 	androidVejet:
+// 		"https://play.google.com/store/apps/details?id=com.vietjetair.vjmobileapp",
+// 	iosVietjet: "https://apps.apple.com/vn/app/vietjet-air/id867009161",
 }

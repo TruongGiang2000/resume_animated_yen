@@ -32,8 +32,6 @@ const Header = () => {
             setIsFocusTab("Others")
         } else if (scrollPosition > DEFINE_SCROLL_Y.other && scrollPosition <= DEFINE_SCROLL_Y.education) {
             setIsFocusTab("Education")
-        } else if (scrollPosition > DEFINE_SCROLL_Y.education && scrollPosition <= DEFINE_SCROLL_Y.contact) {
-            setIsFocusTab("Contacts")
         } else {
             setIsFocusTab("Home")
         }
@@ -67,14 +65,11 @@ const Header = () => {
             <Button type="text" onClick={() => handleOnScroll(DEFINE_SCROLL_TO.experience)} >
                 <Typo fontSize={14} txt='Experience' bold={isFocusTab === "Experience"} />
             </Button>
-            <Button type="text" onClick={() => handleOnScroll(DEFINE_SCROLL_TO.other)} >
+            {/* <Button type="text" onClick={() => handleOnScroll(DEFINE_SCROLL_TO.other)} >
                 <Typo fontSize={14} txt='Other Projects' bold={isFocusTab === "Others"} />
-            </Button>
+            </Button> */}
             <Button type="text" onClick={() => handleOnScroll(DEFINE_SCROLL_TO.education)} >
                 <Typo fontSize={14} txt='Education' bold={isFocusTab === "Education"} />
-            </Button>
-            <Button type="text" onClick={() => handleOnScroll(DEFINE_SCROLL_TO.contact)} >
-                <Typo fontSize={14} txt='Contacts' bold={isFocusTab === "Contacts"} />
             </Button>
         </Row>
     </Row>

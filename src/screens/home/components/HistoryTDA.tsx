@@ -3,16 +3,16 @@ import {apple_store, ch_play} from "../../../assets"
 import {Spacer, Typo} from "../../../components"
 import {onLink} from "../../../utils"
 import styles from '../styles'
-import {DESCRIPTION_YOUMED, RESPONSIBILITY_YOUMED} from "./constants"
-const HistoryYouMed = () => {
+import {DESCRIPTION_TDA, RESPONSIBILITY_TDA} from "./constants"
+const HistoryTDA = () => {
     return <Col style={styles.boxExperience}>
         <Row align="middle" justify="start">
             <Col span={8}>
-                <Typo fontSize={20} txt="Youmed" bold />
+                <Typo fontSize={20} txt="TDA Solution" bold />
                 <Spacer />
-                <Typo txt="QC Engineer" fontSize={12} />
+                <Typo txt="Business Analyst and Consultant" fontSize={12} />
             </Col>
-            <Typo fontSize={16} txt="Jan, 2021 - Apr, 2022" />
+            <Typo fontSize={16} txt="Oct, 2015 - Jan, 2021" />
         </Row>
         <Spacer h={16} />
         <Row align="middle" justify="start">
@@ -25,36 +25,19 @@ const HistoryYouMed = () => {
             <Col span={8}>
                 <Typo fontSize={16} txt="Domain:" bold />
             </Col>
-            <Typo txt="Medical Health" />
+            <Typo txt="ERP (Enterprise Resource Planning)" />
         </Row>
-        {/* <Row align="middle" justify="start">
-            <Col span={8}>
-                <Typo fontSize={16} txt="Team Size:" bold />
-            </Col>
-            <Typo txt="3+" />
-        </Row> */}
         <Spacer h={8} />
         <Row align="top" justify="start">
             <Col span={8}>
                 <Typo fontSize={16} txt="Project:" bold />
             </Col>
             <Col span={16}>
-                <Typo txt="Youmed: HealthCare, Telemedicine for User and Management System for Provider" bold />
+                <Typo txt="DiHotel: Hotel Management System" bold />
                 <Spacer />
                 <Typo txt="Description: " bold />
-                <Typo txt={DESCRIPTION_YOUMED} />
+                <Typo txt={DESCRIPTION_TDA} />
                 <Spacer />
-                {/* <Typo txt="Website: " bold />
-                <Button type="link" style={styles.paddingNone} onClick={() => onLink(LINK_IN_WEB.webYouMed)}>
-                    <Typo style={styles.txtLink} txt={LINK_IN_WEB.webYouMed} />
-                </Button>
-                <Spacer h={8} />
-                <Button type="link" style={styles.paddingNone} onClick={() => onLink(LINK_IN_WEB.androidYouMed)}>
-                    <Image preview={false} src={ch_play} style={{...styles.iconStore, marginRight: 16}} />
-                </Button>
-                <Button type="link" style={styles.paddingNone} onClick={() => onLink(LINK_IN_WEB.iosYouMed)}>
-                    <Image preview={false} src={apple_store} style={styles.iconStore} />
-                </Button> */}
             </Col>
         </Row>
         <Spacer h={8} />
@@ -63,10 +46,10 @@ const HistoryYouMed = () => {
                 <Typo fontSize={16} style={{width: '30%'}} txt="Responsibility:" bold />
             </Col>
             <Col span={16}>
-                {RESPONSIBILITY_YOUMED.map((it, index) => {
+                {RESPONSIBILITY_TDA.map((it, index) => {
                     return <>
                         <Typo txt={it} />
-                        {index !== RESPONSIBILITY_YOUMED.length - 1 && <Spacer h={4} />}
+                        {index !== RESPONSIBILITY_TDA.length - 1 && <Spacer h={4} />}
                     </>
                 })}
 
@@ -78,10 +61,9 @@ const HistoryYouMed = () => {
                 <Typo fontSize={16} style={{width: '30%'}} txt="Honors & Awards:" bold />
             </Col>
             <Col span={16}>
-            <Typo txt="Best Performance Of The Year 2021" />
-
+            <Typo txt="Employee of The Year Award (2017-2020)" />
             </Col>
         </Row>
     </Col>
 }
-export default HistoryYouMed
+export default HistoryTDA

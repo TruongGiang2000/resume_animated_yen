@@ -1,7 +1,7 @@
 export const back_self = require("./back_self.jpg")
 export const front_self_real = require("./front_self_real.jpg")
 export const self_face = require("./self_face.jpg")
-export const self_photo = require("./selfPhoto.jpg")
+export const self_photo = require("./self_photo.jpg")
 export const self_remove_background = require("./self_remove_background.png")
 export const logo_self = require("./logo_self.png")
 export const ch_play = require("./ch_play.png")
